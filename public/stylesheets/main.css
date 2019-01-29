@@ -1,14 +1,106 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1493925410384-84f842e616fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1901&q=80);
+    background-color: #1F1C1D;
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 4d3b65a56b78807fb54542b0bd0f1271b564ca39
+}
+
+#welcome{
+    font-size: 50px; 
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+
+}
+.form-title{
+    color: white;
+}
+.mainrow{
+    height: 100vh;
+}
+.jumbotron #intro{
+    font-size: 20px;
+    font-style: italic;
+}
+.jumbotron{
+     font-family: 'Open Sans', sans-serif;  
+     background-color: #1F1C1D;
+     text-align: center;
+     color: white;
+     margin-top: 0;
+    
+}
+.jumbotron button{
+    text-align: center;
+}
+
+.btncss{
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  display:block;
+  background-color: #fcad26;
+  padding: 15px 60px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #EFA424; 
+  
+}
+
+.list-group-item a{
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btncss a{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.btncss:hover{
+  box-shadow: 0 4px #EFA424;
+  position: relative;
+  top: 2px;
+}
+
+.btncss:active{
+  box-shadow: none;
+  position:relative;
+  top:6px;
+}
+#img-responsive{
+    width: 60%
+  
+}
+#cakedesc{
+    margin-top: 20px;
+    padding-top: 20px;
+}
 .thumbnail img{
    width: 100%;
+}
+.thumbnailsize{
+    
 }
 
 .thumbnail{
     padding: 0;
+    /*height: 360px;*/
+    /*width: 360px;*/
+    
 }
 
 .thumbnail .caption-full{
     padding: 9px;
 }
+
 
 #delete-form{
     display: inline;
@@ -16,4 +108,64 @@
 
 #delete-comment{
     display: inline;
+}
+
+#pie{
+    margin-left: 20px;
+    font-size: 27px;
+    /*margin-bottom: 8px;*/
+    margin: 0 auto;
+    color: black;
+}
+.navbar {
+    color: black;
+    margin-bottom: 0;
+}
+
+
+.btn-primary{
+   background-color: #FCAD26;
+   outline-color: #FCAD26;
+   border-color: #FCAD26;
+}
+.btn-primary:hover{
+   background-color: #1F1C1D;
+   outline-color: #1F1C1D;
+   border-color: #1F1C1D;
+}
+.fa-clock{
+    margin-right: 5px;
+}
+#btn-orange{
+    background-color: #FCAD26;
+    border:none;
+    color: white;
+}
+.container-css{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style:none;
+}
+
+#privacy{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style:none;
+   
+    
+}
+.container{
+    height: 100%;
+}
+.container-css li{
+    margin: 10px;
+    color: #868E96;
+}
+.container-css a{
+font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
 }

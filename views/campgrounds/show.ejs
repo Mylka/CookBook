@@ -3,18 +3,19 @@
 <div class="container">
     <div class="row"> 
         <div class="col-md-3">
-            <p class="lead">YelpCamp </p>
+            <p class="lead">Cookbook </p>
             <div class="list-group"> 
-                <li class="list-group-item active"> Info 1 </li>
-                <li class="list-group-item"> Info 2 </li>
-                <li class="list-group-item"> Info 3 </li>
+                <li class="list-group-item active" id="btn-orange"><a href="#" id="btn-orange" > Cake</a></li>
+                <li class="list-group-item"><a href="#"> Ingredients </a></li>
+                <li class="list-group-item"><a href="#"> Recipe </a></li>
+                <li class="list-group-item"> <a href="#"> Tips</a> </li>
             </div>
          </div>
          <div class="col-md-9">
-            <div class="thumbnail">
-                <img class="img-responsive" src = "<%= campground.image%>">
+            <div class="thumbnail" id="cakedesc">
+                <img id="img-responsive" src = "<%= campground.image%>">
                 <div class="caption-full">
-                <h4 class="pull-right"> $<%= campground.price%>/night</h4>
+                <h4 class="pull-right"><i class="far fa-clock"></i><%= campground.price%> min</h4>
                <h4><a><%= campground.name %></a></h4>
                <p><%=campground.description%> </p>
                <p> 
@@ -63,8 +64,6 @@
 </div>
 
 
-
->
 
 
 <% include ../partials/footer %>

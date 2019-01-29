@@ -7,11 +7,52 @@ body {
     position: relative;
     text-align: center;
     padding-top: 40vh;
+    margin-top: 80px;
+    opacity: 0;
+    animation: 2s slidein 1s forwards;
     
+}
+.btncss{
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  display:block;
+  background-color: #fcad26;
+  padding: 15px 60px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #EFA424; 
+  
+}
+
+.btncss a{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.btncss:hover{
+  box-shadow: 0 4px #EFA424;
+  position: relative;
+  top: 2px;
+}
+
+.btncss:active{
+  box-shadow: none;
+  position:relative;
+  top:6px;
 }
 
 #landing-header h1{
     color: #fff;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px rgb(35, 1, 0);
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    
 }
 
 .slideshow { 
@@ -41,24 +82,35 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+  background-image: url(https://images.unsplash.com/photo-1523035274455-b2e5c6d5c2e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  background-image: url(https://images.unsplash.com/photo-1542733083-dc82892e0427?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1906&q=80);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  background-image: url(https://images.unsplash.com/photo-1511856332-b99fe3fa3b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1901&q=80);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  background-image: url(https://images.unsplash.com/photo-1536614984430-64652c3ad956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  background-image: url(https://images.unsplash.com/photo-1448131063153-f1e240f98a72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1924&q=80);
   animation-delay: 40s; 
 }
+
+@keyframes slidein{
+  100%{
+    opacity: 1;
+    margin-top:0;
+  }
+}
+
 
 @keyframes imageAnimation { 
   0% { 
